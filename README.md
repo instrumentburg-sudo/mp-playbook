@@ -29,14 +29,20 @@ docs/
 ```bash
 uv venv --python 3.12
 source .venv/bin/activate
-uv pip install mkdocs-material mkdocs-glightbox mkdocs-awesome-pages-plugin
-mkdocs serve        # http://127.0.0.1:8000
-mkdocs build        # в site/
+uv pip install -r requirements.txt
+python build.py              # → site/
+python -m http.server -d site 8000
 ```
+
+## Стек
+
+- Собственный статический билдер `build.py` (Python + markdown + jinja2).
+- Editorial dark тема: Instrument Serif + Fraunces + JetBrains Mono.
+- Никаких фреймворков. Минимум зависимостей, максимум контроля.
 
 ## Деплой
 
-GitHub Actions собирает MkDocs на push в `main` и пушит в ветку `gh-pages`.
+GitHub Actions запускает `build.py` на push в `main`, публикует `site/` в GitHub Pages.
 
 ## Обновления
 

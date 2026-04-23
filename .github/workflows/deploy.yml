@@ -1,4 +1,4 @@
-name: Deploy MkDocs to GitHub Pages
+name: Build & Deploy to GitHub Pages
 
 on:
   push:
@@ -27,11 +27,13 @@ jobs:
           cache: pip
 
       - name: Install dependencies
-        run: |
-          pip install mkdocs-material mkdocs-glightbox mkdocs-awesome-pages-plugin
+        run: pip install markdown pygments jinja2
 
       - name: Build site
-        run: mkdocs build --strict
+        run: python build.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
