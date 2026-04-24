@@ -38,6 +38,7 @@ NAV = [
         "pages": [
             {"title": "Best practices апр'26", "path": "updates/best-practices-2026.md", "slug": "updates/best-practices", "kicker": "Δ"},
             {"title": "API · WB / Ozon / MPStats", "path": "updates/api-limits.md", "slug": "updates/api-limits", "kicker": "API"},
+            {"title": "MPStats API каталог", "path": "updates/mpstats-api-catalog.md", "slug": "updates/mpstats-api-catalog", "kicker": "⌬"},
         ],
     },
     {
@@ -47,6 +48,7 @@ NAV = [
             {"title": "Дизайн инструмента", "path": "tool/design.md", "slug": "tool/design", "kicker": "⊕"},
             {"title": "Принятые решения", "path": "tool/decisions.md", "slug": "tool/decisions", "kicker": "⊢"},
             {"title": "Фазы и гейты", "path": "tool/phases.md", "slug": "tool/phases", "kicker": "⤿"},
+            {"title": "Бюджет и цикл денег", "path": "tool/budget-cycle.md", "slug": "tool/budget-cycle", "kicker": "₽"},
         ],
     },
 ]

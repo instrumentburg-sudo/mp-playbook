@@ -17,11 +17,13 @@ docs/
 │   └── 05-launch-ads.md
 ├── updates/                    # правки 2026
 │   ├── best-practices-2026.md
-│   └── api-limits.md
+│   ├── api-limits.md
+│   └── mpstats-api-catalog.md  # каталог API-эндпоинтов под поиск новинок
 └── tool/                       # дизайн инструмента
     ├── design.md
     ├── decisions.md
-    └── phases.md
+    ├── phases.md
+    └── budget-cycle.md         # бюджет конвейера и цикл денег
 ```
 
 ## Локально
