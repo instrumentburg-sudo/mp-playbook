@@ -34,3 +34,32 @@ existing_ourself:                 # анти-фильтр, фаза 1 (phases.md
 synergy:                          # фаза 1, п.3 — синергия со складом/логистикой/экспертизой
   warehouse: ""                   # габариты вписываются в текущую логистику? да/нет/комментарий
   expertise: ""                   # опыт по этому типу товара у нас есть? да/нет/комментарий
+
+# Метрики MPStats на момент дискавери. Фиксируются один раз для трассировки —
+# почему именно этот SKU попал в фазу IDEA. Не обновляются — для актуальных
+# данных смотри market.yaml фазы 2.
+discovery:
+  scanned_at: ""                  # дата скана, YYYY-MM-DD
+  scan_id: ""                     # ссылка на products/_scans/<id>/summary.md
+  wb_nm_id: 0                     # nmId WB, по которому работают URL и превью (поле `id` в ответе MPStats)
+  mpstats_itemid: 0               # внутренний itemid MPStats — нужен для item-level API (`/wb/get/item/{itemid}/...`)
+  url: ""                         # https://www.wildberries.ru/catalog/<wb_nm_id>/detail.aspx
+  thumb_url: ""                   # превью карточки на CDN basket-N.wbbasket.ru
+  subject: ""                     # MPStats subject — конкретный предмет внутри категории
+  found_in_branches: []           # пути категорий, в которых SKU попал в фильтр
+  metrics_30d:                    # данные за окно 30 дн на момент скана
+    revenue_rub: 0                # current revenue
+    revenue_potential_rub: 0      # current + lost_profit
+    comments: 0
+    days_in_site: 0
+    balance: 0
+    sales_per_day_average: 0.0
+    turnover_days: 0.0
+    start_price_rub: 0
+    final_price_rub: 0
+  glue_check:                     # критерий #9 чек-листа методологии
+    price_ratio: 0.0              # start_price / final_price; >5 = подозрение на болванку
+    size_count: 0                 # >3 = склейка по размерам
+    color_count: null             # MPStats не отдаёт; null до ручной проверки в UI
+    manual_ui_check_done: false   # глаз-в-глаз по url
+    manual_ui_check_verdict: ""   # "чистая" | "склейка" | "болванка"

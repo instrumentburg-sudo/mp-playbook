@@ -1,0 +1,63 @@
+# brief.yaml — фаза 1 IDEA
+# Кандидат отобран в пилотном скане 2026-04-27, см. products/_scans/2026-04-27-pilot/summary.md.
+
+id: "2026-04-001-shurupovert-minimax"
+created_at: "2026-04-27"
+
+source:
+  type: mpstats
+  ref: "https://www.wildberries.ru/catalog/969600485/detail.aspx"
+
+hypothesis: |
+  Аккумуляторный шуруповёрт компактного сегмента (10–18В) с упором на низкую цену и быстрый оборот.
+  TODO селлеру: уточнить позиционирование, бренд-нэйминг и точную модель.
+
+category_guess:
+  marketplace: wb
+  path: "Для ремонта/Инструменты и оснастка/Сверление, долбление, закручивание"
+
+price_range_guess:
+  min_rub: 3919
+  max_rub: 5303
+  median_competitor_rub: 4611
+
+usp_draft: |
+  TODO селлеру: одна фраза — чем закрываем боль, которую топ-3 не закрывают.
+  Источники для формулировки: отзывы конкурентов из топ-30 (фаза 2 MARKET).
+
+existing_ourself:
+  is_overlapping: false
+  overlap_category: ""
+  manual_override:
+    accepted: false
+    reason: ""
+
+synergy:
+  warehouse: "TODO — оценить габариты vs текущая логистика"
+  expertise: "TODO — оценить опыт работы с этим типом товара"
+
+discovery:
+  scanned_at: "2026-04-27"
+  scan_id: "products/_scans/2026-04-27-pilot/summary.md"
+  wb_nm_id: 969600485
+  mpstats_itemid: 1109529972
+  url: "https://www.wildberries.ru/catalog/969600485/detail.aspx"
+  thumb_url: "https://basket-41.wbbasket.ru/vol9696/part969600/969600485/images/c516x688/1.webp"
+  subject: "Электроинструмент и оборудование / Шуруповерты"
+  found_in_branches: ["01-sverlenie", "07-nabory-avto"]
+  metrics_30d:
+    revenue_rub: 229715
+    revenue_potential_rub: 1378290
+    comments: 7
+    days_in_site: 10
+    balance: 8
+    sales_per_day_average: 1.67
+    turnover_days: 0.8
+    start_price_rub: 6578
+    final_price_rub: 4611
+  glue_check:
+    price_ratio: 1.43
+    size_count: 0
+    color_count: null
+    manual_ui_check_done: false
+    manual_ui_check_verdict: ""

@@ -1,0 +1,63 @@
+# brief.yaml — фаза 1 IDEA
+# Кандидат отобран в пилотном скане 2026-04-27, см. products/_scans/2026-04-27-pilot/summary.md.
+
+id: "2026-04-004-trimmer-sadovy"
+created_at: "2026-04-27"
+
+source:
+  type: mpstats
+  ref: "https://www.wildberries.ru/catalog/933486178/detail.aspx"
+
+hypothesis: |
+  Аккумуляторный садовый триммер мощного сегмента, ниша между бензо- и электро-.
+  TODO селлеру: уточнить позиционирование, бренд-нэйминг и точную модель.
+
+category_guess:
+  marketplace: wb
+  path: "Сад и дача/Садовая техника/Триммеры/Триммер садовый"
+
+price_range_guess:
+  min_rub: 2191
+  max_rub: 4875
+  median_competitor_rub: 2577
+
+usp_draft: |
+  TODO селлеру: одна фраза — чем закрываем боль, которую топ-3 не закрывают.
+  Источники для формулировки: отзывы конкурентов из топ-30 (фаза 2 MARKET).
+
+existing_ourself:
+  is_overlapping: false
+  overlap_category: ""
+  manual_override:
+    accepted: false
+    reason: ""
+
+synergy:
+  warehouse: "TODO — оценить габариты vs текущая логистика"
+  expertise: "TODO — оценить опыт работы с этим типом товара"
+
+discovery:
+  scanned_at: "2026-04-27"
+  scan_id: "products/_scans/2026-04-27-pilot/summary.md"
+  wb_nm_id: 933486178
+  mpstats_itemid: 1700587926
+  url: "https://www.wildberries.ru/catalog/933486178/detail.aspx"
+  thumb_url: "https://basket-40.wbbasket.ru/vol9334/part933486/933486178/images/c516x688/1.webp"
+  subject: "Садовая техника / Триммеры садовые"
+  found_in_branches: ["09-trimmer-sad"]
+  metrics_30d:
+    revenue_rub: 298330
+    revenue_potential_rub: 994433
+    comments: 81
+    days_in_site: 23
+    balance: 44
+    sales_per_day_average: 3.9
+    turnover_days: 3.38
+    start_price_rub: 10000
+    final_price_rub: 2583
+  glue_check:
+    price_ratio: 3.87
+    size_count: 0
+    color_count: null
+    manual_ui_check_done: false
+    manual_ui_check_verdict: ""

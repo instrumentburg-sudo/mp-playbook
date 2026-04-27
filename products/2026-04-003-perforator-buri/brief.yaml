@@ -1,0 +1,63 @@
+# brief.yaml — фаза 1 IDEA
+# Кандидат отобран в пилотном скане 2026-04-27, см. products/_scans/2026-04-27-pilot/summary.md.
+
+id: "2026-04-003-perforator-buri"
+created_at: "2026-04-27"
+
+source:
+  type: mpstats
+  ref: "https://www.wildberries.ru/catalog/943735029/detail.aspx"
+
+hypothesis: |
+  Электроперфоратор в комплекте с расходником (буры) — снижение барьера входа.
+  TODO селлеру: уточнить позиционирование, бренд-нэйминг и точную модель.
+
+category_guess:
+  marketplace: wb
+  path: "Для ремонта/Инструменты и оснастка/Сверление, долбление, закручивание"
+
+price_range_guess:
+  min_rub: 2135
+  max_rub: 3033
+  median_competitor_rub: 2637
+
+usp_draft: |
+  TODO селлеру: одна фраза — чем закрываем боль, которую топ-3 не закрывают.
+  Источники для формулировки: отзывы конкурентов из топ-30 (фаза 2 MARKET).
+
+existing_ourself:
+  is_overlapping: false
+  overlap_category: ""
+  manual_override:
+    accepted: false
+    reason: ""
+
+synergy:
+  warehouse: "TODO — оценить габариты vs текущая логистика"
+  expertise: "TODO — оценить опыт работы с этим типом товара"
+
+discovery:
+  scanned_at: "2026-04-27"
+  scan_id: "products/_scans/2026-04-27-pilot/summary.md"
+  wb_nm_id: 943735029
+  mpstats_itemid: 1447302551
+  url: "https://www.wildberries.ru/catalog/943735029/detail.aspx"
+  thumb_url: "https://basket-40.wbbasket.ru/vol9437/part943735/943735029/images/c516x688/1.webp"
+  subject: "Электроинструмент и оборудование / Перфораторы"
+  found_in_branches: ["01-sverlenie"]
+  metrics_30d:
+    revenue_rub: 247454
+    revenue_potential_rub: 824846
+    comments: 32
+    days_in_site: 12
+    balance: 38
+    sales_per_day_average: 3.43
+    turnover_days: 3.32
+    start_price_rub: 7603
+    final_price_rub: 2721
+  glue_check:
+    price_ratio: 2.79
+    size_count: 0
+    color_count: null
+    manual_ui_check_done: false
+    manual_ui_check_verdict: ""

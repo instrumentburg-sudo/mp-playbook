@@ -1,0 +1,63 @@
+# brief.yaml — фаза 1 IDEA
+# Кандидат отобран в пилотном скане 2026-04-27, см. products/_scans/2026-04-27-pilot/summary.md.
+
+id: "2026-04-002-gaikovert-akkum-udarnyi"
+created_at: "2026-04-27"
+
+source:
+  type: mpstats
+  ref: "https://www.wildberries.ru/catalog/922455993/detail.aspx"
+
+hypothesis: |
+  Аккумуляторный ударный гайковёрт массового сегмента (без премиум-брендов).
+  TODO селлеру: уточнить позиционирование, бренд-нэйминг и точную модель.
+
+category_guess:
+  marketplace: wb
+  path: "Для ремонта/Инструменты и оснастка/Сверление, долбление, закручивание"
+
+price_range_guess:
+  min_rub: 4538
+  max_rub: 6768
+  median_competitor_rub: 5338
+
+usp_draft: |
+  TODO селлеру: одна фраза — чем закрываем боль, которую топ-3 не закрывают.
+  Источники для формулировки: отзывы конкурентов из топ-30 (фаза 2 MARKET).
+
+existing_ourself:
+  is_overlapping: false
+  overlap_category: ""
+  manual_override:
+    accepted: false
+    reason: ""
+
+synergy:
+  warehouse: "TODO — оценить габариты vs текущая логистика"
+  expertise: "TODO — оценить опыт работы с этим типом товара"
+
+discovery:
+  scanned_at: "2026-04-27"
+  scan_id: "products/_scans/2026-04-27-pilot/summary.md"
+  wb_nm_id: 922455993
+  mpstats_itemid: 1307871017
+  url: "https://www.wildberries.ru/catalog/922455993/detail.aspx"
+  thumb_url: "https://basket-40.wbbasket.ru/vol9224/part922455/922455993/images/c516x688/1.webp"
+  subject: "Электроинструмент и оборудование / Гайковерты"
+  found_in_branches: ["01-sverlenie"]
+  metrics_30d:
+    revenue_rub: 194661
+    revenue_potential_rub: 1167966
+    comments: 26
+    days_in_site: 28
+    balance: 0
+    sales_per_day_average: 1.27
+    turnover_days: 0
+    start_price_rub: 12300
+    final_price_rub: 5284
+  glue_check:
+    price_ratio: 2.33
+    size_count: 0
+    color_count: null
+    manual_ui_check_done: false
+    manual_ui_check_verdict: ""

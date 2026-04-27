@@ -1,0 +1,63 @@
+# brief.yaml — фаза 1 IDEA
+# Кандидат отобран в пилотном скане 2026-04-27, см. products/_scans/2026-04-27-pilot/summary.md.
+
+id: "2026-04-006-nabor-saylentbloki"
+created_at: "2026-04-27"
+
+source:
+  type: mpstats
+  ref: "https://www.wildberries.ru/catalog/709662142/detail.aspx"
+
+hypothesis: |
+  Узкоспециализированный набор для замены сайлентблоков, втулок и подшипников — нишевый автоинструмент.
+  TODO селлеру: уточнить позиционирование, бренд-нэйминг и точную модель.
+
+category_guess:
+  marketplace: wb
+  path: "Автотовары/Инструменты/Наборы инструментов"
+
+price_range_guess:
+  min_rub: 5027
+  max_rub: 6801
+  median_competitor_rub: 5914
+
+usp_draft: |
+  TODO селлеру: одна фраза — чем закрываем боль, которую топ-3 не закрывают.
+  Источники для формулировки: отзывы конкурентов из топ-30 (фаза 2 MARKET).
+
+existing_ourself:
+  is_overlapping: true
+  overlap_category: "наборы инструмента + автоинструмент"
+  manual_override:
+    accepted: true
+    reason: "Расширение существующей экспертизы по наборному автоинструменту: те же поставщики, та же ЦА, цель — добавить нишевые SKU без расфокуса. Согласовано с селлером 2026-04-27."
+
+synergy:
+  warehouse: "TODO — оценить габариты vs текущая логистика"
+  expertise: "TODO — оценить опыт работы с этим типом товара"
+
+discovery:
+  scanned_at: "2026-04-27"
+  scan_id: "products/_scans/2026-04-27-pilot/summary.md"
+  wb_nm_id: 709662142
+  mpstats_itemid: 727579930
+  url: "https://www.wildberries.ru/catalog/709662142/detail.aspx"
+  thumb_url: "https://basket-34.wbbasket.ru/vol7096/part709662/709662142/images/c516x688/1.webp"
+  subject: "Автоаксессуары и дополнительное оборудование / Съемники автомобильные"
+  found_in_branches: ["07-nabory-avto"]
+  metrics_30d:
+    revenue_rub: 209028
+    revenue_potential_rub: 783855
+    comments: 10
+    days_in_site: 45
+    balance: 0
+    sales_per_day_average: 1.17
+    turnover_days: 0
+    start_price_rub: 17000
+    final_price_rub: 5872
+  glue_check:
+    price_ratio: 2.9
+    size_count: 0
+    color_count: null
+    manual_ui_check_done: false
+    manual_ui_check_verdict: ""
