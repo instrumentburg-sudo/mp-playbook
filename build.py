@@ -42,12 +42,20 @@ NAV = [
         ],
     },
     {
-        "section": "Инструмент",
+        "section": "Сканы",
         "number": "03",
+        "pages": [
+            {"title": "Пилот · 2026-04-27", "path": "scans/2026-04-27-pilot.md", "slug": "scans/2026-04-27-pilot", "kicker": "⊙"},
+        ],
+    },
+    {
+        "section": "Инструмент",
+        "number": "04",
         "pages": [
             {"title": "Дизайн инструмента", "path": "tool/design.md", "slug": "tool/design", "kicker": "⊕"},
             {"title": "Принятые решения", "path": "tool/decisions.md", "slug": "tool/decisions", "kicker": "⊢"},
             {"title": "Фазы и гейты", "path": "tool/phases.md", "slug": "tool/phases", "kicker": "⤿"},
+            {"title": "Чек-лист методологии", "path": "tool/methodology-checklist.md", "slug": "tool/methodology-checklist", "kicker": "✓"},
             {"title": "Бюджет и цикл денег", "path": "tool/budget-cycle.md", "slug": "tool/budget-cycle", "kicker": "₽"},
         ],
     },
