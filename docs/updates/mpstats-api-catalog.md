@@ -14,10 +14,11 @@
 | Аутентификация | заголовок `X-Mpstats-TOKEN: <token>` |
 | Лимит записей в ответе | до 5 000 на запрос |
 | Rate limit | ~100 req/min, при превышении — `429` |
+| Дневная квота | 10 000 запросов/день на каждый из модулей `wb_external` и `ozon_external` (тариф 200, апрель 2026) |
 | Тариф | Advanced Jam / Premium Jam (~7–15 тыс ₽/мес, API открывается на Advanced+) |
 | Документация | [docs.mpstats.io](https://docs.mpstats.io) |
 
-Квоту проверяем через `GET /user/check/limits`.
+Профиль и квоту проверяем через `GET /me` — отдаёт `subscriptionStatus.<module>.dailyLimits` и `availableTools`. Эндпоинт `/user/check/limits` из старой документации больше не работает, отвечает `405`.
 
 ## Карта «правило курса → эндпоинт MPStats»
 
