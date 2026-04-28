@@ -36,11 +36,11 @@ NAV = [
         "section": "Обновления 2026",
         "number": "02",
         "pages": [
-            {"title": "Best practices апр'26", "path": "updates/best-practices-2026.md", "slug": "updates/best-practices", "kicker": "Δ"},
-            {"title": "Runbook · 1 час", "path": "updates/runbook-discovery-1h.md", "slug": "updates/runbook-discovery-1h", "kicker": "⏱"},
+            {"title": "Лучшие практики апр'26", "path": "updates/best-practices-2026.md", "slug": "updates/best-practices", "kicker": "Δ"},
+            {"title": "Пошаговый план · 1 час", "path": "updates/runbook-discovery-1h.md", "slug": "updates/runbook-discovery-1h", "kicker": "⏱"},
             {"title": "API · WB / Ozon / MPStats", "path": "updates/api-limits.md", "slug": "updates/api-limits", "kicker": "API"},
-            {"title": "MPStats API каталог", "path": "updates/mpstats-api-catalog.md", "slug": "updates/mpstats-api-catalog", "kicker": "⌬"},
-            {"title": "Источник · дип-ресёрч 2026-04-28", "path": "updates/sources/deep-research-2026-04-28.md", "slug": "updates/sources/deep-research-2026-04-28", "kicker": "✦"},
+            {"title": "Каталог MPStats API", "path": "updates/mpstats-api-catalog.md", "slug": "updates/mpstats-api-catalog", "kicker": "⌬"},
+            {"title": "Источник · углублённый разбор 2026-04-28", "path": "updates/sources/deep-research-2026-04-28.md", "slug": "updates/sources/deep-research-2026-04-28", "kicker": "✦"},
         ],
     },
     {
@@ -54,9 +54,9 @@ NAV = [
         "section": "Инструмент",
         "number": "04",
         "pages": [
-            {"title": "Дизайн инструмента", "path": "tool/design.md", "slug": "tool/design", "kicker": "⊕"},
+            {"title": "Замысел инструмента", "path": "tool/design.md", "slug": "tool/design", "kicker": "⊕"},
             {"title": "Принятые решения", "path": "tool/decisions.md", "slug": "tool/decisions", "kicker": "⊢"},
-            {"title": "Фазы и гейты", "path": "tool/phases.md", "slug": "tool/phases", "kicker": "⤿"},
+            {"title": "Фазы и контрольные точки", "path": "tool/phases.md", "slug": "tool/phases", "kicker": "⤿"},
             {"title": "Чек-лист методологии", "path": "tool/methodology-checklist.md", "slug": "tool/methodology-checklist", "kicker": "✓"},
             {"title": "Бюджет и цикл денег", "path": "tool/budget-cycle.md", "slug": "tool/budget-cycle", "kicker": "₽"},
         ],
