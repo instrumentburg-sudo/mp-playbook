@@ -41,6 +41,7 @@ NAV = [
             {"title": "API · WB / Ozon / MPStats", "path": "updates/api-limits.md", "slug": "updates/api-limits", "kicker": "API"},
             {"title": "Каталог MPStats API", "path": "updates/mpstats-api-catalog.md", "slug": "updates/mpstats-api-catalog", "kicker": "⌬"},
             {"title": "Источник · углублённый разбор 2026-04-28", "path": "updates/sources/deep-research-2026-04-28.md", "slug": "updates/sources/deep-research-2026-04-28", "kicker": "✦"},
+            {"title": "Источник · Тимур Товарка март-апрель 2026", "path": "updates/sources/timur-tovarka-2026-04-29.md", "slug": "updates/sources/timur-tovarka-2026-04-29", "kicker": "✦"},
         ],
     },
     {
