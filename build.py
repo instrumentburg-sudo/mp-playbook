@@ -49,6 +49,7 @@ NAV = [
         "number": "03",
         "pages": [
             {"title": "Пилот · 2026-04-27", "path": "scans/2026-04-27-pilot.md", "slug": "scans/2026-04-27-pilot", "kicker": "⊙"},
+            {"title": "Сад · 2026-05-02", "path": "scans/2026-05-02-garden.md", "slug": "scans/2026-05-02-garden", "kicker": "⊙"},
         ],
     },
     {
