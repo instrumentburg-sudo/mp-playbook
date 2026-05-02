@@ -53,11 +53,35 @@
 | Доля топ-3 продавцов | Категорийный запрос с агрегацией по бренду / продавцу | Считается на стороне клиента (§10.8) |
 | Sales/day по карточке (зелёная 3–10) | `GET /wb/get/item/{nm_id}/sales` | `d1`, `d2` — окно 30 дней; средняя по активным дням (§10.11) |
 | Факт-выручка карточки | Та же | `Σ sales × final_price` за окно (Insight) |
-| Тренд ниши за 6 мес | `POST /wb/get/category/trend` | `path`, `d1/d2` за 180 дней |
+| Тренд ниши за 6 мес | **два запроса** `POST /wb/get/category` за разные периоды | см. секцию «Тренд subject через два периода» ниже |
 | Поисковые запросы по топу конкурентов | `GET /wb/get/item/{nm_id}/by_keywords` | `d1/d2` |
 | Отзывы конкурента (боли) | `GET /wb/get/item/{nm_id}/reviews` | |
 
 Для Ozon — префикс `/oz/` вместо `/wb/`. Поля частично отличаются (есть признаки склейки `parent_sku`, `sku_first`).
+
+## Тренд subject через два периода (workaround)
+
+Документированный `POST /wb/get/category/trend` отвечает **405 Method Not Allowed** (на любой комбинации GET/POST × body/params); альтернативный `_trend` отвечает **500 Internal Server Error**. Подтверждено на токене ИП Пихенек, тариф 200, скан 2026-05-02. Endpoint считается сломанным до объявления MPStats об обратном.
+
+**Рабочий обход** — два параллельных запроса `POST /wb/get/category` за два периода и сравнение `Σ revenue` топ-100:
+
+```python
+async def trend_via_two_periods(client, path, current=("2026-04-02","2026-05-01"), prior=("2025-11-02","2025-12-01")):
+    body = lambda d1, d2: {"d1":d1,"d2":d2,"startRow":0,"endRow":100,
+                           "sortModel":[{"colId":"revenue","sort":"desc"}]}
+    cur, prv = await asyncio.gather(
+        client.post(f"{BASE}/wb/get/category", params={"path":path}, json=body(*current), headers=HEADERS),
+        client.post(f"{BASE}/wb/get/category", params={"path":path}, json=body(*prior),   headers=HEADERS),
+    )
+    cur_sum = sum(r.get("revenue",0) for r in cur.json().get("data",[]))
+    prv_sum = sum(r.get("revenue",0) for r in prv.json().get("data",[]))
+    return cur_sum / prv_sum if prv_sum > 0 else None  # ratio>1 → выручка subject выросла
+```
+
+**Caveats:**
+- Если subject сезонный — `ratio > 5×` это **сезонный пик**, не структурный рост. Валидация через Wordstat 36 мес обязательна, см. [`b-p-2026 §11.1`](best-practices-2026.md).
+- Состав топ-100 за 6 месяцев меняется — это органическая динамика, но для строгой оценки правильнее сравнивать с поправкой на пересечение SKU-множеств. Для скрининга 100+ subject хватает грубого ratio.
+- Метод **не отделяет миграцию чужих карточек в subject от реального роста спроса** — для этого нужен семантический фильтр имени, см. [`b-p-2026 §10.13`](best-practices-2026.md) trap 1 и шаг 4.5 [`runbook-discovery-1h.md`](runbook-discovery-1h.md).
 
 ## Sales/day на NB-окне — нюанс
 
