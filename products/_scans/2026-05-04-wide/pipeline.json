@@ -1,0 +1,106 @@
+{
+  "pipeline": "wide-discovery-2026-05-04",
+  "created": "2026-05-04",
+  "params": {
+    "budget_min_rub": 300000,
+    "budget_max_rub": 500000,
+    "budget_center_rub": 400000,
+    "revenue_shelf_min_rub": 440000,
+    "revenue_shelf_max_rub": 1160000,
+    "revenue_shelf_formula": "1.1 × budget_center до 2.9 × budget_center (§10.9)",
+    "platform_stage1": "wb",
+    "comments_max": 30,
+    "nb_window_days": 14,
+    "scan_window_days": 30,
+    "scan_d1": "2026-04-04",
+    "scan_d2": "2026-05-03"
+  },
+  "roots": {
+    "garden": {
+      "title": "Садовая техника",
+      "subjects_planned": [
+        "Триммеры",
+        "Газонокосилки",
+        "Пилы цепные",
+        "Опрыскиватели",
+        "Насосы поверхностные/погружные"
+      ],
+      "subjects_skip": [
+        "Воздуходувки",
+        "Культиваторы",
+        "Кусторезы"
+      ],
+      "skip_reason": "уже сканированы 2026-05-02; культиваторы — 4/4 §13.1 копий 1688"
+    },
+    "power": {
+      "title": "Электроинструмент",
+      "subjects_planned": [
+        "Лобзики АКБ",
+        "Циркулярные пилы АКБ",
+        "Рубанки",
+        "УШМ малые сетевые",
+        "Миксеры строительные",
+        "Степлеры АКБ"
+      ],
+      "subjects_skip": [
+        "Шуруповёрты АКБ",
+        "Гайковёрты АКБ",
+        "Перфораторы"
+      ],
+      "skip_reason": "пилот 2026-04-27"
+    },
+    "fuel": {
+      "title": "Бензоинструмент",
+      "subjects_planned": [
+        "Бензопилы",
+        "Бензокосы/триммеры",
+        "Мотоблоки",
+        "Генераторы бензиновые",
+        "Мотопомпы"
+      ]
+    },
+    "auto": {
+      "title": "Автоинструмент",
+      "subjects_planned": [
+        "Наборы инструментов универсальные",
+        "Наборы торцевых головок",
+        "Съёмники/спецключи",
+        "Сканеры OBD2",
+        "Домкраты",
+        "Компрессоры авто"
+      ]
+    }
+  },
+  "steps": {
+    "scaffold": {
+      "status": "completed"
+    },
+    "stage1_garden": {
+      "status": "completed"
+    },
+    "stage1_power": {
+      "status": "completed"
+    },
+    "stage1_fuel": {
+      "status": "completed"
+    },
+    "stage1_auto": {
+      "status": "completed"
+    },
+    "stage1_summary": {
+      "status": "completed"
+    },
+    "stage2_runbook": {
+      "status": "completed"
+    },
+    "publish": {
+      "status": "completed"
+    }
+  },
+  "data_traps_armed": [
+    "10.13 мусорная таксономия — regex по name для каждого subject",
+    "13.1 копия 1688 — визуально на ступени 2 по каждому кандидату",
+    "5b разовая сделка — days_with_sales ≥ 5 за 30 дней (на ступени 2)",
+    "5b аномально дорого — цена ≤ 3× медианы topa-50 чистого subject"
+  ]
+}
