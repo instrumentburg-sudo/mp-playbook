@@ -121,6 +121,9 @@ def render_card(item_id: str, file_slug: str, verdict: str, hint: str, platform:
     days_with_sales = row.get("days_with_sales") or 0
     comments = row.get("comments") or 0
     turnover = row.get("turnover_days") if platform == "wb" else row.get("turnover")
+    sales = row.get("sales") or 0
+    balance = row.get("balance") or 0
+    rating = row.get("rating") or 0
 
     thumb = row.get("thumb_middle") or row.get("thumb") or ""
     if thumb.startswith("//"):
@@ -142,7 +145,13 @@ def render_card(item_id: str, file_slug: str, verdict: str, hint: str, platform:
         except (TypeError, ValueError):
             turnover_txt = str(turnover)
 
-    return f'''<article class="card">
+    verdict_class = "v-main" if "ОСНОВНАЯ" in verdict else \
+                    "v-idea" if "ИДЕЯ" in verdict else \
+                    "v-reserve" if "РЕЗЕРВ" in verdict else \
+                    "v-recheck" if "ПЕРЕПРОВЕРИТЬ" in verdict else \
+                    "v-reject"
+    rating_str = f"{rating:.1f}".rstrip("0").rstrip(".") if rating else "—"
+    return f'''<article class="card {verdict_class}">
   <a class="card-img" href="{link}" target="_blank" rel="noopener">
     <img src="{thumb}" alt="{name}" loading="lazy">
   </a>
@@ -154,8 +163,11 @@ def render_card(item_id: str, file_slug: str, verdict: str, hint: str, platform:
     <dt>Цена</dt><dd>{fmt_int(price)}&nbsp;₽</dd>
     <dt>Выручка / мес</dt><dd><b>{fmt_money(revenue)}</b></dd>
     <dt>Упущ. прибыль</dt><dd><b>{fmt_money(lost)}</b></dd>
+    <dt>Продаж за 30 дн</dt><dd>{fmt_int(sales)}&nbsp;шт</dd>
+    <dt>Остаток</dt><dd>{fmt_int(balance)}&nbsp;шт</dd>
     <dt>Оборот</dt><dd>{turnover_txt}</dd>
-    <dt>Возраст / отзывы</dt><dd>{days_in_site}&nbsp;дн / {comments}</dd>
+    <dt>Возраст карточки</dt><dd>{days_in_site}&nbsp;дн</dd>
+    <dt>Отзывы / рейтинг</dt><dd>{comments} / {rating_str}</dd>
     <dt>Дней с продажами</dt><dd>{days_with_sales} из 30</dd>
   </dl>
   <a class="card-link" href="{link}" target="_blank" rel="noopener">Открыть на {platform_label} →</a>
@@ -164,8 +176,13 @@ def render_card(item_id: str, file_slug: str, verdict: str, hint: str, platform:
 
 def render() -> str:
     parts = ['''<style>
-.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin: 16px 0 28px; }
-.card { background: #fff; border: 1px solid #e6e6e6; border-radius: 8px; padding: 12px; font-size: 13px; line-height: 1.35; display: flex; flex-direction: column; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin: 16px 0 28px; }
+.card { background: #fff; border: 1px solid #e6e6e6; border-radius: 8px; padding: 12px; font-size: 13px; line-height: 1.35; display: flex; flex-direction: column; border-top-width: 4px; }
+.card.v-main { border-top-color: #2a6f2a; }
+.card.v-idea { border-top-color: #4caf50; }
+.card.v-reserve { border-top-color: #f9a825; }
+.card.v-recheck { border-top-color: #ff7043; }
+.card.v-reject { border-top-color: #c62828; opacity: 0.7; }
 .card-img { display:block; width:100%; aspect-ratio: 3 / 4; overflow:hidden; border-radius:6px; margin-bottom:8px; background:#f5f5f5; }
 .card-img img { width:100%; height:100%; object-fit:cover; display:block; }
 .card-badge { font-size: 11px; font-weight: 600; color: #555; margin-bottom: 4px; letter-spacing: 0.02em; }
