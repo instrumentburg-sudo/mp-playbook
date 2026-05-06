@@ -51,6 +51,12 @@ NAV = [
             {"title": "Пилот · 2026-04-27", "path": "scans/2026-04-27-pilot.md", "slug": "scans/2026-04-27-pilot", "kicker": "⊙"},
             {"title": "Сад · 2026-05-02", "path": "scans/2026-05-02-garden.md", "slug": "scans/2026-05-02-garden", "kicker": "⊙"},
             {"title": "Широкий · 2026-05-04", "path": "scans/2026-05-04-wide.md", "slug": "scans/2026-05-04-wide", "kicker": "⊙"},
+            {"title": "Сад KQ · 2026-05-06", "path": "scans/2026-05-06-kq-garden.md", "slug": "scans/2026-05-06-kq-garden", "kicker": "⊙"},
+            {"title": "  · KQ-G1500ET (культиватор)", "path": "scans/2026-05-06-kq-garden/KQ-G1500ET.md", "slug": "scans/2026-05-06-kq-garden/KQ-G1500ET", "kicker": "·"},
+            {"title": "  · KQ-G1400LM (газонокосилка)", "path": "scans/2026-05-06-kq-garden/KQ-G1400LM.md", "slug": "scans/2026-05-06-kq-garden/KQ-G1400LM", "kicker": "·"},
+            {"title": "  · KQ-G20-14GS (ножницы-кусторез)", "path": "scans/2026-05-06-kq-garden/KQ-G20-14GS.md", "slug": "scans/2026-05-06-kq-garden/KQ-G20-14GS", "kicker": "·"},
+            {"title": "  · KQ-G20-510HT (кусторез 510 мм)", "path": "scans/2026-05-06-kq-garden/KQ-G20-510HT.md", "slug": "scans/2026-05-06-kq-garden/KQ-G20-510HT", "kicker": "·"},
+            {"title": "  · KQ-G20TS2V1 (высоторез)", "path": "scans/2026-05-06-kq-garden/KQ-G20TS2V1.md", "slug": "scans/2026-05-06-kq-garden/KQ-G20TS2V1", "kicker": "·"},
         ],
     },
     {
