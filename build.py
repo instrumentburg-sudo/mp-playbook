@@ -67,6 +67,7 @@ NAV = [
             {"title": "Принятые решения", "path": "tool/decisions.md", "slug": "tool/decisions", "kicker": "⊢"},
             {"title": "Фазы и контрольные точки", "path": "tool/phases.md", "slug": "tool/phases", "kicker": "⤿"},
             {"title": "Чек-лист методологии", "path": "tool/methodology-checklist.md", "slug": "tool/methodology-checklist", "kicker": "✓"},
+            {"title": "Точная юнит-экономика 2026", "path": "tool/unit-economics-precision-2026.md", "slug": "tool/unit-economics-precision-2026", "kicker": "₽"},
             {"title": "Бюджет и цикл денег", "path": "tool/budget-cycle.md", "slug": "tool/budget-cycle", "kicker": "₽"},
         ],
     },

@@ -1,0 +1,379 @@
+{
+  "date": "2026-05-12",
+  "mpstats_window": {
+    "current": [
+      "2026-04-12",
+      "2026-05-11"
+    ],
+    "previous": [
+      "2026-03-13",
+      "2026-04-11"
+    ]
+  },
+  "rows": [
+    {
+      "article": "KQ-G1400LM",
+      "name": "Газонокосилка электрическая KINGQUEEN 1400 ВТ, KQ-G1400LM",
+      "kind": "газонокосилка",
+      "stock": 289,
+      "cost": 6266.91,
+      "best_link": "Ozon · ФБО",
+      "min_green_price": 17860.6935,
+      "recommended_buyer_price": 17890.0,
+      "margin_pct": 0.1518488276308436,
+      "profit_rub": 2716.5755263157916,
+      "verdict": "GO",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 10067.75,
+        "median": 17169.5,
+        "p75": 26543.25
+      },
+      "ozon_market": {
+        "p25": 13422.0,
+        "median": 21854.0,
+        "p75": 32384.0
+      }
+    },
+    {
+      "article": "KQ-G350GT",
+      "name": "Триммер электрический KINGQUEEN 350 ВТ, KQ-G350GT",
+      "kind": "триммер",
+      "stock": 989,
+      "cost": 1696.8,
+      "best_link": "Ozon · ФБО",
+      "min_green_price": 5684.28,
+      "recommended_buyer_price": 5690.0,
+      "margin_pct": 0.15351239478309117,
+      "profit_rub": 873.4855263157888,
+      "verdict": "GO",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 2841.75,
+        "median": 5005.0,
+        "p75": 7598.5
+      },
+      "ozon_market": {
+        "p25": 2636.25,
+        "median": 3875.5,
+        "p75": 8352.25
+      }
+    },
+    {
+      "article": "KQ-750",
+      "name": "Мойка высокого давления KINGQUEEN, 7,5кВт, 960 л/ч, 380В, KQ-750",
+      "kind": "мойка",
+      "stock": 20,
+      "cost": 62097.55,
+      "best_link": "WB · ФБО",
+      "min_green_price": 149034.12,
+      "recommended_buyer_price": 149090.0,
+      "margin_pct": 0.15127178959763293,
+      "profit_rub": 22553.111111111095,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 5927.0,
+        "median": 9600.0,
+        "p75": 15581.0
+      },
+      "ozon_market": {
+        "p25": 6680.0,
+        "median": 11739.0,
+        "p75": 21908.0
+      }
+    },
+    {
+      "article": "KQ-400",
+      "name": "Мойка высокого давления KINGQUEEN, 4кВт, 900 л/ч, 380В, KQ-400",
+      "kind": "мойка",
+      "stock": 20,
+      "cost": 47086.37,
+      "best_link": "WB · ФБО",
+      "min_green_price": 115361.60650000001,
+      "recommended_buyer_price": 115390.0,
+      "margin_pct": 0.15177044034241344,
+      "profit_rub": 17512.791111111088,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 5927.0,
+        "median": 9600.0,
+        "p75": 15581.0
+      },
+      "ozon_market": {
+        "p25": 6680.0,
+        "median": 11739.0,
+        "p75": 21908.0
+      }
+    },
+    {
+      "article": "KQ-30D",
+      "name": "Мойка высокого давления KINGQUEEN, 3кВт, 840 л/ч, KQ-30D",
+      "kind": "мойка",
+      "stock": 20,
+      "cost": 30361.82,
+      "best_link": "WB · ФБО",
+      "min_green_price": 77422.64099999999,
+      "recommended_buyer_price": 77490.0,
+      "margin_pct": 0.15081741013177338,
+      "profit_rub": 11686.84111111112,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 5927.0,
+        "median": 9600.0,
+        "p75": 15581.0
+      },
+      "ozon_market": {
+        "p25": 6680.0,
+        "median": 11739.0,
+        "p75": 21908.0
+      }
+    },
+    {
+      "article": "KQ-270M",
+      "name": "Мойка высокого давления KINGQUEEN 3000W KQ-270M",
+      "kind": "мойка",
+      "stock": 704,
+      "cost": 14688.67,
+      "best_link": "Ozon · ФБС",
+      "min_green_price": 40393.8425,
+      "recommended_buyer_price": 40490.0,
+      "margin_pct": 0.15527078810882464,
+      "profit_rub": 6286.914210526309,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 5927.0,
+        "median": 9600.0,
+        "p75": 15581.0
+      },
+      "ozon_market": {
+        "p25": 6680.0,
+        "median": 11739.0,
+        "p75": 21908.0
+      }
+    },
+    {
+      "article": "KQ-G20TS2V1",
+      "name": "Высоторез-сучкорез АКБ 2В1 KINGQUEEN 20 В, KQ-G20TS2V1",
+      "kind": "кусторез/ножницы",
+      "stock": 489,
+      "cost": 7404.96,
+      "best_link": "Ozon · ФБО",
+      "min_green_price": 20733.888,
+      "recommended_buyer_price": 20790.0,
+      "margin_pct": 0.15158621933621938,
+      "profit_rub": 3151.477500000001,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 2466.0,
+        "median": 3257.0,
+        "p75": 4348.25
+      },
+      "ozon_market": {
+        "p25": 2526.0,
+        "median": 3493.0,
+        "p75": 6140.0
+      }
+    },
+    {
+      "article": "KQ-G1500ET",
+      "name": "Культиватор электрический KINGQUEEN 1500 ВТ, KQ-G1500ET",
+      "kind": "культиватор",
+      "stock": 256,
+      "cost": 8631.06,
+      "best_link": "Ozon · ФБО",
+      "min_green_price": 24166.967999999997,
+      "recommended_buyer_price": 24190.0,
+      "margin_pct": 0.15390349426687847,
+      "profit_rub": 3722.92552631579,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 6897.0,
+        "median": 8595.0,
+        "p75": 12402.0
+      },
+      "ozon_market": {
+        "p25": 8953.5,
+        "median": 12011.0,
+        "p75": 19378.0
+      }
+    },
+    {
+      "article": "KQ-G21-12CT",
+      "name": "Пила цепная АКБ 12 дюймов в кейсе, Проф, KINGQUEEN KQ-G21-12CT",
+      "kind": "цепная пила",
+      "stock": 232,
+      "cost": 6245.79,
+      "best_link": "Ozon · ФБС",
+      "min_green_price": 17488.212,
+      "recommended_buyer_price": 17490.0,
+      "margin_pct": 0.1501641599711114,
+      "profit_rub": 2626.3711578947386,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 3090.25,
+        "median": 4336.0,
+        "p75": 6093.25
+      },
+      "ozon_market": {
+        "p25": 3205.0,
+        "median": 5396.0,
+        "p75": 7728.0
+      }
+    },
+    {
+      "article": "KQ-G20-510HT",
+      "name": "Садовый кусторез АКБ KINGQUEEN 20 В, KQ-G20-510HT",
+      "kind": "кусторез/ножницы",
+      "stock": 487,
+      "cost": 5216.2,
+      "best_link": "Ozon · ФБО",
+      "min_green_price": 14866.17,
+      "recommended_buyer_price": 14890.0,
+      "margin_pct": 0.15062038280725315,
+      "profit_rub": 2242.7374999999993,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 2466.0,
+        "median": 3257.0,
+        "p75": 4348.25
+      },
+      "ozon_market": {
+        "p25": 2526.0,
+        "median": 3493.0,
+        "p75": 6140.0
+      }
+    },
+    {
+      "article": "KQ-G21-12C",
+      "name": "Пила цепная АКБ 12 дюймов в кейсе KINGQUEEN KQ-G21-12C",
+      "kind": "цепная пила",
+      "stock": 364,
+      "cost": 4739.06,
+      "best_link": "Ozon · ФБС",
+      "min_green_price": 13506.321000000002,
+      "recommended_buyer_price": 13590.0,
+      "margin_pct": 0.15346586886642666,
+      "profit_rub": 2085.601157894738,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 3090.25,
+        "median": 4336.0,
+        "p75": 6093.25
+      },
+      "ozon_market": {
+        "p25": 3205.0,
+        "median": 5396.0,
+        "p75": 7728.0
+      }
+    },
+    {
+      "article": "KQ-G20-14GS",
+      "name": "Садовые ножницы-кусторез АКБ KINGQUEEN 20 В, KQ-G20-14GS",
+      "kind": "кусторез/ножницы",
+      "stock": 989,
+      "cost": 4576.34,
+      "best_link": "Ozon · ФБС",
+      "min_green_price": 13271.386,
+      "recommended_buyer_price": 13290.0,
+      "margin_pct": 0.15082586828244432,
+      "profit_rub": 2004.475789473685,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 2466.0,
+        "median": 3257.0,
+        "p75": 4348.25
+      },
+      "ozon_market": {
+        "p25": 2526.0,
+        "median": 3493.0,
+        "p75": 6140.0
+      }
+    },
+    {
+      "article": "KQ-G550GT",
+      "name": "Триммер электрический KINGQUEEN 550 ВТ, KQ-G550GT",
+      "kind": "триммер",
+      "stock": 498,
+      "cost": 3412.49,
+      "best_link": "Ozon · ФБО",
+      "min_green_price": 9896.221,
+      "recommended_buyer_price": 9990.0,
+      "margin_pct": 0.15458413676834726,
+      "profit_rub": 1544.2955263157892,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 2841.75,
+        "median": 5005.0,
+        "p75": 7598.5
+      },
+      "ozon_market": {
+        "p25": 2636.25,
+        "median": 3875.5,
+        "p75": 8352.25
+      }
+    },
+    {
+      "article": "KQ-G20-250GT",
+      "name": "Триммер АКБ KINGQUEEN 20 В, KQ-G20-250GT",
+      "kind": "триммер",
+      "stock": 499,
+      "cost": 4565.82,
+      "best_link": "Ozon · ФБО",
+      "min_green_price": 13925.750999999998,
+      "recommended_buyer_price": 13990.0,
+      "margin_pct": 0.15663084534065705,
+      "profit_rub": 2191.265526315792,
+      "verdict": "STOP market",
+      "confidence": "C",
+      "wb_cabinet_price": null,
+      "ozon_cabinet_price": null,
+      "wb_market": {
+        "p25": 2841.75,
+        "median": 5005.0,
+        "p75": 7598.5
+      },
+      "ozon_market": {
+        "p25": 2636.25,
+        "median": 3875.5,
+        "p75": 8352.25
+      }
+    }
+  ]
+}
